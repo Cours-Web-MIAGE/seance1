@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Create a div to be able to insert the application here -->
+    <div id="app-wrapper">
+      <div>{{ counter }}</div>
+      <div>
+        <button @click="increment" class="with-margin">Incrémenter</button>
+        <button @click="decrement">Décrémenter</button>
+      </div>
+    </div>
+    <!-- Insert a script to include VueJS in the application -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Insert the script to call the index file in the app/ folder -->
+    <script type="text/javascript" src="./app/index.js" ></script>
+  </body>
+</html>

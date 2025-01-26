@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- Create a div to be able to insert the application here -->
+    <div id="app-wrapper">{{ message }}</div>
+    <!-- Insert a script to include VueJS in the application -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <script>
+      // Create the application to initialize the message and mount it on the dedicated container.
+      Vue.createApp({
+        setup: () => ({ message: "Hello world!" })
+      }).mount("#app-wrapper");
+    </script>
+  </body>
+</html>
